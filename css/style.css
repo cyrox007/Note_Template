@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100;400;500&family=Grape+Nuts&display=swap');
+
+:root {
+    --header-font: 'Grape Nuts', cursive;
+    --text-font: 'Anek Devanagari', sans-serif;
+    --main-font: 'Montserrat', sans-serif;
+
+    --color-w: #fff;
+    --color-l: #F5EBF4;
+    --color-a: #B3A17A;
+    --color-m: #7BADC3;
+    --color-n: #8A7D87;
+    --color-d: #2B556D;
+    --color-b: #000;
+
+    --color-bg: var(--color-l);
+    --color-light: var(--color-w);
+    --color-header: var(--color-m);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: antiquewhite;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+    background-color: #FFF;
+    box-shadow: 0 0 15px black;
+    border-radius: 5px;
+}
+
+.container .header {
+    background: rgb(91, 125, 240);
+}
+.container .header h1 {
+    text-align: center;
+    font-family: var(--header-font);
+    font-size: 2rem; /* 1rem = 16px */
+    font-weight: 400;
+    color: #FFF;
+}
