@@ -35,14 +35,12 @@ body {
 .container {
     width: 375px;
     margin: 0 auto;
-    /* background-color: #FFF;
-    box-shadow: 0 0 15px black;
-    border-radius: 5px; */
 }
 
 .container .header {
     background: var(--color-m);
     padding: 15px;
+    display: flex;
 }
 .container .header h1 {
     text-align: left;
@@ -54,4 +52,71 @@ body {
 .container .header i {
     font-size: 24px;
     color: var(--color-w);
+}
+
+.container .main {
+    padding: 15px;
+}
+
+.container .main form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .main form input[type=text]{
+    width: 80%;
+    background-color: var(--color-w);
+    border: none;
+    padding: 12px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--color-m);
+}
+.container .main form button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background: var(--color-m);
+    color: var(--color-w);
+    font-size: 24px;
+}
+.container hr {
+    background: var(--color-m);
+    height: 2px;
+    border: none;
+}
+
+.container .block-notes {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .block-notes .note {
+    margin: 6px 0;
+    
+    color: var(--color-d);
+}
+
+.container .block-notes .note a {
+    text-decoration: none;
+    color: var(--color-d);
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 4px;
+    position: relative;
+}
+.container .block-notes .note a::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0%;
+    height: 1px;
+    background: var(--color-d);
+    transition: 0.2s;
+}
+.container .block-notes .note a:hover::before {
+    width: 100%;
 }
