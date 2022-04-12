@@ -60,12 +60,12 @@ body {
 
 .container .main form {
     display: flex;
+    
     align-items: center;
-    justify-content: space-between;
 }
 
 .container .main form input[type=text]{
-    width: 80%;
+    flex: 1;
     background-color: var(--color-w);
     border: none;
     padding: 12px 10px;
