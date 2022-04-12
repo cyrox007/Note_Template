@@ -41,12 +41,17 @@ body {
 }
 
 .container .header {
-    background: rgb(91, 125, 240);
+    background: var(--color-m);
+    padding: 15px 0;
 }
 .container .header h1 {
     text-align: center;
-    font-family: var(--header-font);
-    font-size: 2rem; /* 1rem = 16px */
-    font-weight: 400;
+    font-family: var(--main-font);
+    font-size: 1.5rem; /* 1rem = 16px */
+    font-weight: 500;
     color: #FFF;
+}
+.container .header i {
+    font-size: 24px;
+    color: #000;
 }
